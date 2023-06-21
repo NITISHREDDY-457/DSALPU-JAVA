@@ -1,0 +1,84 @@
+import java.util.*;
+// class Car{
+//     String name;
+//     String color;
+//     int model ;
+//     int maxspeed;
+//     void accelerate(){
+//         System.out.println("Car is accelerating");
+//     }
+// }
+// public class Lecture7 {
+//     public static void main(String[] args){
+//         Car c2 =new Car();
+//         System.out.println(c2.name);
+//         System.out.println(c2.color);
+//         System.out.println(c2.model);
+//         System.out.println(c2.maxspeed);
+//     }
+// } 
+
+// Control Flow->
+class Student {
+    String name;
+    int roll;
+    int marks;
+
+    boolean is_pass() {
+        if(marks>36)
+		{ 
+			return true;
+		}
+	  else
+		{
+			return false;
+		}
+    }
+}
+
+public class Lecture7 {
+    int findMax(int p, int q, int r) {
+        int max = q;
+
+        if (p > max) {
+            max = p;
+        }
+
+        if (r > max) {
+            max = r;
+        }
+        return max;
+    }
+
+    public static void main(String args[]) {
+        Student st = new Student();
+        Student st1 = new Student();
+        st.name = "Khanna";
+        st.marks = 92;
+        st1.name = "Subhash";
+        st1.marks = 35;
+        System.out.println(st.is_pass());
+        System.out.println(st1.is_pass());
+
+        Lecture7 l=new Lecture7();
+        System.out.println("The Max of three numbers is : " +l.findMax(2, 5, 7));
+       
+
+        char c ='a';   
+     switch (c) {
+            case 'a':
+                System.out.println("Hi,I'm a");
+               
+            case 'b':
+                System.out.println("Hi,I'm b");
+                break;
+            case 'c':
+                System.out.println("Hi,I'm c");
+                break;
+            default:
+                System.out.println("neither a, nor b or c");
+                break;
+        }
+
+    }
+}
